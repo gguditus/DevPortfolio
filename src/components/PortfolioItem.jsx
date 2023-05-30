@@ -6,7 +6,7 @@ function PortfolioItem({ title, imgUrl, techStack, link }) {
       href={link}
       target="_blank"
       rel="noopener noreferrer"
-      className="border-4 border-stone-700 dark:border-stone-300 rounded-lg overflow-hidden hover:scale-105"
+      className="border-2 border-stone-700 dark:border-stone-300 rounded-lg overflow-hidden hover:scale-105 hover:border-4"
     >
       <img
         src={imgUrl}
@@ -19,7 +19,7 @@ function PortfolioItem({ title, imgUrl, techStack, link }) {
         </h3>
         <p className="flex flex-wrap gap-2 flex-row items-center justify-start text-xs md:text-sm">
           {techStack.map((item) => (
-            <span className="inline-block px-2 py-1 font-semibold border-2 border-stone-800 dark:border-stone-400 rounded-md">
+            <span className="inline-block px-2 py-1 font-medium border-2 border-stone-800 dark:border-stone-400 rounded-md">
               {item}
             </span>
           ))}
